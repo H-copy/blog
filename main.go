@@ -9,6 +9,7 @@ import (
 
 	// "github.com/gin-gonic/gin"
 
+	"blog/internal/model"
 	"blog/internal/routers"
 	"blog/pkg/setting"
 	"blog/global"
@@ -18,6 +19,10 @@ func init(){
 	
 	if err := setupSetting(); err != nil{
 		log.Fatalf("init config err:%v", err)
+	}
+
+	if err := setDBEngine(); err != nil{
+		log.Fatalf("init DB err:%v", err)
 	}
 }
 
@@ -47,6 +52,12 @@ func setupSetting() error{
 	global.ServerSetting.WriterTimeout *= time.Second
 
 	return nil
+}
+
+func setDBEngine() error{
+	var err error
+	global.DBEngine, err = model.NewDBEngine(global.DatabaseSetting)
+	return err
 }
 
 func main(){

@@ -4,6 +4,7 @@ import (
 	
 	"blog/global"
 	"blog/pkg/errcode"
+	"blog/internal/model"
 
 	"github.com/gin-gonic/gin"
 )
@@ -20,13 +21,18 @@ func (t TagRouter) List(c *gin.Context){
 	statusCode := errcode.Success.StatusCode()
 	msg := errcode.Success.Msg()
 	
+	tags := []model.Tag{}
+
+	global.DBEngine.Find(&tags)
+
+	print(tags)
+	
 	c.JSON(
 		statusCode,
 		gin.H{
 			"serverConf": &global.ServerSetting, 
-			"appConf": &global.AppSetting, 
-			"databaseConf": &global.DatabaseSetting, 
 			"msg": msg,
+			"dataList": tags,
 		},
 	)
 	
