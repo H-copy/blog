@@ -1,0 +1,2 @@
+2020/08/07 00:38:41 {"callers":["C:/Users/uo/Desktop/demo/blog/main.go: 30 main.init.0"],"level":"info","message":"start server","time":1596731921524396000}
+2020/08/07 00:42:03 {"callers":["C:/Users/uo/Desktop/demo/blog/main.go: 30 main.init.0"],"level":"info","message":"start server","time":1596732123949008100}
