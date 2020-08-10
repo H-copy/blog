@@ -3,3 +3,6 @@
 2020/08/10 23:35:02 {"callers":["C:/Users/uo/Desktop/demo/blog/main.go: 30 main.init.0"],"level":"info","message":"start server","time":1597073702769383900}
 2020/08/10 23:39:18 {"callers":["C:/Users/uo/Desktop/demo/blog/main.go: 30 main.init.0"],"level":"info","message":"start server","time":1597073958851883600}
 2020/08/10 23:47:48 {"callers":["C:/Users/uo/Desktop/demo/blog/main.go: 30 main.init.0"],"level":"info","message":"start server","time":1597074468674058300}
+2020/08/11 01:02:28 {"callers":["C:/Users/uo/Desktop/demo/blog/main.go: 30 main.init.0"],"level":"info","message":"start server","time":1597078948349944000}
+2020/08/11 01:50:36 {"callers":["C:/Users/uo/Desktop/demo/blog/main.go: 30 main.init.0"],"level":"info","message":"start server","time":1597081836739267800}
+2020/08/11 01:55:50 {"callers":["C:/Users/uo/Desktop/demo/blog/main.go: 30 main.init.0"],"level":"info","message":"start server","time":1597082150690267600}
